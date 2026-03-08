@@ -11,7 +11,7 @@ class WiremockBuilder {
   }
 
   loadUsers() {
-    const filePath = path.join(__dirname, "../fixtures/users.json")
+    const filePath = path.join(__dirname, "../fixtures/data/users.json")
     return JSON.parse(fs.readFileSync(filePath))
   }
 

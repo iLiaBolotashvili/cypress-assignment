@@ -1,4 +1,4 @@
-const { AGE_30, MALE } = require("../constants/users")
+const { AGE_30, MALE } = require("../../constants/users")
 const { HttpStatusCode } = require("axios")
 
 module.exports = [

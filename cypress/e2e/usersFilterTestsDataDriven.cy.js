@@ -1,5 +1,5 @@
 const UsersSteps = require("../steps/UsersSteps")
-const testCases = require("../test-data/userFilterCases")
+const testCases = require("../fixtures/cases/userFilterCases")
 
 describe("Users API Filtering — Data Driven", () => {
 
