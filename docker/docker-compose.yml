@@ -1,0 +1,9 @@
+services:
+
+  wiremock:
+    image: wiremock/wiremock:3.3.1
+    container_name: wiremock-server
+    ports:
+      - "8080:8080"
+    command:
+      - "--global-response-templating"

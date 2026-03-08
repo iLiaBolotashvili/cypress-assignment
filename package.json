@@ -1,0 +1,40 @@
+{
+  "name": "cypress-assignment",
+  "version": "1.0.0",
+  "description": "Project for my tech assignment.",
+  "author": "Ilia Bolotashvili",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "keywords": [
+    "cypress",
+    "api-testing",
+    "wiremock",
+    "automation",
+    "sqlite",
+    "testing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iLiaBolotashvili/cypress-assignment.git"
+  },
+  "homepage": "https://github.com/iLiaBolotashvili/cypress-assignment",
+  "scripts": {
+    "cy:run": "cypress run",
+    "test:debug": "cypress open",
+    "wiremock:start": "docker compose -f docker/docker-compose.yml up -d",
+    "wiremock:stop": "docker compose -f docker/docker-compose.yml down",
+    "test": "npm run wiremock:start && npm run cy:run"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cypress": "^15.11.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "axios": "^1.13.6",
+    "better-sqlite3": "^12.6.2"
+  }
+}
